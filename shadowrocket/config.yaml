@@ -19,12 +19,12 @@ update-url = https://shadowrocket.yiqun.io/main.conf
 
 
 [Proxy Group]
-BEST = url-test,白月光,policy-regex-filter=香港|台湾|日本|韩国|新加坡,url=http://google.com,tolerance=30,use=true
-AU = url-test,白月光,policy-regex-filter=澳大利亚,url=http://telstra.com.au,tolerance=30,use=true
-HK = url-test,白月光,policy-regex-filter=香港,url=http://google.com,tolerance=30,use=true
-US = url-test,白月光,policy-regex-filter=美国,url=http://google.com,tolerance=30,use=true
-JP = url-test,白月光,policy-regex-filter=日本,url=http://google.com,tolerance=30,use=true
-TW = url-test,白月光,policy-regex-filter=台湾,url=http://google.com,tolerance=30,use=true
+第四范式 = select,policy-regex-filter=范式|4paradigm｜4pd
+澳洲 = url-test,policy-regex-filter=🇦🇺|澳大利亚|澳洲|AU,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
+日本 = url-test,policy-regex-filter=🇯🇵|日本|JP,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
+台湾 = url-test,policy-regex-filter=🇹🇼|台湾|TW,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
+美国 = url-test,policy-regex-filter=🇺🇸|美国|US,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
+香港 = url-test,policy-regex-filter=🇭🇰|香港|hk,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 
 
 [Rule]
