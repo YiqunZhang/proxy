@@ -1,0 +1,101 @@
+[General]
+bypass-system = true
+ipv6 = false
+prefer-ipv6 = false
+private-ip-answer = true
+dns-server = 
+fallback-dns-server = system
+dns-fallback-system = false
+dns-direct-system = false
+dns-direct-fallback-proxy = false
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,localhost,*.local,captive.apple.com,sequoia.apple.com,seed-sequoia.siri.apple.com,yiqun.io,127.0.0.1
+tun-excluded-routes = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32,239.255.255.250/32,localhost
+tun-included-routes = 
+always-real-ip = localhost
+icmp-auto-reply = true
+always-reject-url-rewrite = false
+udp-policy-not-supported-behaviour = REJECT
+update-url = https://shadowrocket.yiqun.io/main.conf
+
+
+[Proxy Group]
+BEST = url-test,白月光,policy-regex-filter=香港|台湾|日本|韩国|新加坡,url=http://google.com,tolerance=30,use=true
+AU = url-test,白月光,policy-regex-filter=澳大利亚,url=http://telstra.com.au,tolerance=30,use=true
+HK = url-test,白月光,policy-regex-filter=香港,url=http://google.com,tolerance=30,use=true
+US = url-test,白月光,policy-regex-filter=美国,url=http://google.com,tolerance=30,use=true
+JP = url-test,白月光,policy-regex-filter=日本,url=http://google.com,tolerance=30,use=true
+TW = url-test,白月光,policy-regex-filter=台湾,url=http://google.com,tolerance=30,use=true
+
+
+[Rule]
+IP-CIDR,172.28.4.0/24,ALIYUN-PROXY-4PD,no-resolve
+# AU
+## claude
+DOMAIN-SUFFIX,anthropic.com,AU
+DOMAIN-SUFFIX,claude.ai,AU
+## chatgpt
+DOMAIN-SUFFIX,openai.com,AU
+RULE-SET,https://raw.githubusercontent.com/wlxuf/add_rule/main/ChatGPT.list,AU
+## gemini
+DOMAIN-SUFFIX,ai.com,AU
+## 其他
+RULE-SET,https://shadowrocket.yiqun.io/rule/apple_news.list,AU
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/AppleNews/AppleNews.list,AU
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,AU
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Amazon/Amazon.list,AU
+# US
+# JP
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Nintendo/Nintendo.list,JP
+# HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/GitHub/GitHub.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Netflix/Netflix.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Disney/Disney.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/HBO/HBO.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Spotify/Spotify.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Telegram/Telegram.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/PayPal/PayPal.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Twitter/Twitter.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Facebook/Facebook.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Steam/Steam.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Sony/Sony.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Epic/Epic.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/SteamCN/SteamCN.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Game/Game.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Microsoft/Microsoft.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,HK
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TVB/TVB.list,HK
+# Direct
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BiliBili/BiliBili.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/NetEaseMusic/NetEaseMusic.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Baidu/Baidu.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouBan/DouBan.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/DouYin/DouYin.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Sina/Sina.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Zhihu/Zhihu.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/XiaoHongShu/XiaoHongShu.list,DIRECT
+# LAN
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Lan/Lan.list,DIRECT
+# China
+GEOIP,CN,DIRECT
+# Final
+FINAL,AU
+
+
+[Host]
+# 域名指定本地值
+localhost = 127.0.0.1
+# 域名指定DNS服务器
+*.apple.com = server:system
+*.cdn-apple.com = server:system
+*.icloud.com = server:system
+
+
+[URL Rewrite]
+
+
+[MITM]
+enable = false
+hostname = *.google.cn
