@@ -29,7 +29,7 @@ update-url = https://shadowrocket.yiqun.io/main.conf
 
 [Rule]
 # 第四范式
-IP-CIDR,172.28.4.0/24,第四范式,no-resolve
+IP-CIDR,172.28.0.0/16,第四范式,no-resolve
 
 # 澳洲
 ## poe
