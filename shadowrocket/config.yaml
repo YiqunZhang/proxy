@@ -45,6 +45,43 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # 台湾
 # 美国
 # 香港
+## github
+DOMAIN-SUFFIX,github.com,香港
+DOMAIN-SUFFIX,github.io,香港
+DOMAIN-SUFFIX,github.dev,香港
+DOMAIN-SUFFIX,git.io,香港
+DOMAIN-SUFFIX,ghcr.io,香港
+DOMAIN-SUFFIX,github.blog,香港
+DOMAIN-SUFFIX,github.community,香港
+DOMAIN-SUFFIX,githubusercontent.com,香港
+
+## npm
+DOMAIN-SUFFIX,npmjs.com,香港
+DOMAIN-SUFFIX,npmjs.org,香港
+DOMAIN-SUFFIX,npm.community,香港
+
+DOMAIN-SUFFIX,github-avatars.oss-cn-hongkong.aliyuncs.com
+DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com
+
+
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
+DOMAIN-SUFFIX,githubusercontent.com
+
+
+DOMAIN-SUFFIX,opensource.guide
+DOMAIN-SUFFIX,rawgit.com
+DOMAIN-SUFFIX,rawgithub.com
+DOMAIN-SUFFIX,thegithubshop.com
+DOMAIN-KEYWORD,github
+
+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/GitHub/GitHub.list,香港
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/Google/Google.list,香港
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/YouTube/YouTube.list,香港
