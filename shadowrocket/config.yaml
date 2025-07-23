@@ -45,10 +45,14 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # 台湾
 # 美国
 # 香港
+## VPN提供商
+DOMAIN-SUFFIX,bygcloud.com,香港
+DOMAIN-SUFFIX,sibker.com,香港
+
 ## porn
-pornhub.com
-jable.tv
-onlyfans.com
+DOMAIN-SUFFIX,pornhub.com,香港
+DOMAIN-SUFFIX,jable.tv,香港
+DOMAIN-SUFFIX,onlyfans.com,香港
 
 ## huggingface
 DOMAIN-SUFFIX,huggingface.co,香港
