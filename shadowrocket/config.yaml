@@ -29,9 +29,19 @@ update-url = https://shadowrocket.yiqun.io/main.conf
 
 [Rule]
 # 第四范式
+IP-CIDR,172.24.0.0/16,第四范式,no-resolve
+IP-CIDR,172.25.0.0/16,第四范式,no-resolve
+IP-CIDR,172.26.0.0/16,第四范式,no-resolve
+IP-CIDR,172.27.0.0/16,第四范式,no-resolve
 IP-CIDR,172.28.0.0/16,第四范式,no-resolve
 
 # 澳洲
+## 政府
+DOMAIN-SUFFIX,gov.au,澳洲
+
+## 学校
+DOMAIN-SUFFIX,anu.edu.au,澳洲
+
 ## poe
 DOMAIN-SUFFIX,poe.com,澳洲
 
