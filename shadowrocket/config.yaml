@@ -55,7 +55,8 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 # 台湾
 # 美国
 # 香港
-## VPN提供商
+## VPN工具和提供商
+DOMAIN-SUFFIX,metacubex.one,香港
 DOMAIN-SUFFIX,bygcloud.com,香港
 DOMAIN-SUFFIX,sibker.com,香港
 
