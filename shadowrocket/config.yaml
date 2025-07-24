@@ -19,7 +19,7 @@ update-url = https://shadowrocket.yiqun.io/main.conf
 
 
 [Proxy Group]
-第四范式 = select,policy-regex-filter=范式|4paradigm|4pd
+第四范式 = select,policy-regex-filter=范式|4paradigm|4Paradigm|4pd
 澳洲 = url-test,policy-regex-filter=🇦🇺|澳大利亚|澳洲|AU,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 日本 = url-test,policy-regex-filter=🇯🇵|日本|JP,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 台湾 = url-test,policy-regex-filter=🇹🇼|台湾|TW,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
