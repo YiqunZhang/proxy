@@ -65,6 +65,11 @@ DOMAIN-SUFFIX,pornhub.com,香港
 DOMAIN-SUFFIX,jable.tv,香港
 DOMAIN-SUFFIX,onlyfans.com,香港
 
+## docker
+docker.com
+docker.io
+dockerhub.com
+
 ## huggingface
 DOMAIN-SUFFIX,huggingface.co,香港
 DOMAIN-SUFFIX,hf.co,香港
