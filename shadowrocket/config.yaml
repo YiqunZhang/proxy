@@ -17,8 +17,6 @@ tun-excluded-routes = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,192.0.
 # TUN包含路由. 默认情况下, shadowrocket接口会声明自己为默认路由, 但由于 Wi-Fi接口的路由较小, 有些流量可能不会通过shadowrocket接口. 使用此选项可以添加一个较小的路由表.
 tun-included-routes = 
 
-#? 总是真实IP. 这个选项要求shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址.
-always-real-ip = localhost
 
 # DNS
 ## DNS覆写. 你可以使用此选项覆盖默认的DNS服务器. iOS系统不允许你在蜂窝网络上修改DNS设置. 现在使用shadowrocket你可以很容易地做到这一点.
@@ -32,6 +30,10 @@ dns-direct-fallback-proxy = false  # direct domain fail to resolve use proxy rul
 
 ## 劫持 DNS. 默认情况下, shadowrocket只返回发送到shadowrocket DNS地址的DNS查询的假IP地址(198.18.0.2). 有些设备或软件总是使用硬编码的DNS服务器(例如Google Speakers总是使用8.8.8.8). 你可以使用此选项劫持查询, 以获得一个假地址.
 hijack-dns = 8.8.8.8:53,1.1.1.1:53
+
+## 总是真实IP. 这个选项要求shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址.
+always-real-ip = localhost
+
 
 [Proxy Group]
 第四范式 = select,policy-regex-filter=范式|4paradigm|4Paradigm|4pd
