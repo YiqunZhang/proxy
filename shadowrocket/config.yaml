@@ -1,9 +1,4 @@
 [General]
-
-## Apple本地wifi认证检测: captive.apple.com
-## Apple本地系统服务, 有反代理检测: seed-sequoia.siri.apple.com
-## 本地回环 和 局域网设备发现: localhost,*.local
-
 # 旁路系统. 如果禁用此选项, 它可能会导致一些系统问题, 如推送通知延误
 bypass-system = true
 
@@ -55,11 +50,16 @@ dns-fallback-system = false
 dns-direct-system = false
 dns-direct-fallback-proxy = false
 
-##? 劫持 DNS. 默认情况下, shadowrocket只返回发送到shadowrocket DNS地址的DNS查询的假IP地址(198.18.0.2). 有些设备或软件总是使用硬编码的DNS服务器(例如Google Speakers总是使用8.8.8.8). 你可以使用此选项劫持查询, 以获得一个假地址.
-hijack-dns = 8.8.8.8:53,1.1.1.1:53
+## 劫持 DNS. 默认情况下, shadowrocket只返回发送到shadowrocket DNS地址的DNS查询的假IP地址(198.18.0.2). 有些设备或软件总是使用硬编码的DNS服务器(例如Google Speakers总是使用8.8.8.8). 你可以使用此选项劫持查询, 以获得一个假地址.
+hijack-dns = 8.8.8.8:53
 
-##? 总是真实IP. 这个选项要求shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址.
-always-real-ip = localhost
+## 总是真实IP. 这个选项要求shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址.
+### Apple本地wifi认证检测: captive.apple.com
+### Apple本地系统服务, 有反代理检测: seed-sequoia.siri.apple.com
+### 本地回环 和 局域网设备发现: localhost,*.local
+always-real-ip = localhost,*.local
+
+
 
 
 [Proxy Group]
