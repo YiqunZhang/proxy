@@ -47,7 +47,7 @@ dns-server = 1.2.4.8,114.114.114.114
 fallback-dns-server = system
 dns-fallback-system = false
 dns-direct-system = false
-dns-direct-fallback-proxy = false  # direct domain fail to resolve use proxy rule
+dns-direct-fallback-proxy = false
 
 ##? 劫持 DNS. 默认情况下, shadowrocket只返回发送到shadowrocket DNS地址的DNS查询的假IP地址(198.18.0.2). 有些设备或软件总是使用硬编码的DNS服务器(例如Google Speakers总是使用8.8.8.8). 你可以使用此选项劫持查询, 以获得一个假地址.
 hijack-dns = 8.8.8.8:53,1.1.1.1:53
