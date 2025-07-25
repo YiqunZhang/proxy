@@ -183,12 +183,10 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 
 
 [Host]
-# 域名指定本地值
+# 域名 指定值
 localhost = 127.0.0.1
-# 域名指定DNS服务器
-*.apple.com = server:system
-*.cdn-apple.com = server:system
-*.icloud.com = server:system
+# 域名 指定DNS服务器
+*.apple.cn = server:system
 
 
 [URL Rewrite]
