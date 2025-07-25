@@ -42,7 +42,7 @@ tun-included-routes =
 
 # DNS
 ## DNS覆写. 你可以使用此选项覆盖默认的DNS服务器. iOS系统不允许你在蜂窝网络上修改DNS设置. 现在使用shadowrocket你可以很容易地做到这一点.
-dns-server = 1.2.4.8,114.114.114.114
+dns-server = 1.2.4.8,223.5.5.5,114.114.114.114
 
 ## 备用 DNS. 如果使用 DNS-over-TLS, DNS-over-HTTPS或者DNS-over-QUIC的域名查询因某种原因而失败, shadowrocket将退回并使用操作系统配置的默认DNS, 而不是显示错误.
 fallback-dns-server = system
