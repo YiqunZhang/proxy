@@ -32,7 +32,7 @@ tun-excluded-routes = 127.0.0.0/8,localhost,255.255.255.255/32,224.0.0.0/4,10.0.
 # TUN包含路由. 默认情况下, shadowrocket接口会声明自己为默认路由, 但由于 Wi-Fi接口的路由较小, 有些流量可能不会通过shadowrocket接口. 使用此选项可以添加一个较小的路由表.
 tun-included-routes = 
 
-#? 跳过代理. 此选项强制这些域名或IP的连接范围由shadowrocket TUN接口来处理, 而不是Shadowrocket代理服务器. 此选项用于解决一些应用程序的一些兼容性问题.
+# 跳过代理. 此选项强制这些域名或IP的连接范围由shadowrocket TUN接口来处理, 而不是Shadowrocket代理服务器. 此选项用于解决一些应用程序的一些兼容性问题.
 ## Apple本地wifi认证检测: captive.apple.com
 ## Apple本地系统服务, 有反代理检测: seed-sequoia.siri.apple.com
 ## 本地回环 和 局域网设备发现: localhost,*.local
@@ -49,10 +49,10 @@ dns-fallback-system = false
 dns-direct-system = false
 dns-direct-fallback-proxy = false  # direct domain fail to resolve use proxy rule
 
-## 劫持 DNS. 默认情况下, shadowrocket只返回发送到shadowrocket DNS地址的DNS查询的假IP地址(198.18.0.2). 有些设备或软件总是使用硬编码的DNS服务器(例如Google Speakers总是使用8.8.8.8). 你可以使用此选项劫持查询, 以获得一个假地址.
+##? 劫持 DNS. 默认情况下, shadowrocket只返回发送到shadowrocket DNS地址的DNS查询的假IP地址(198.18.0.2). 有些设备或软件总是使用硬编码的DNS服务器(例如Google Speakers总是使用8.8.8.8). 你可以使用此选项劫持查询, 以获得一个假地址.
 hijack-dns = 8.8.8.8:53,1.1.1.1:53
 
-## 总是真实IP. 这个选项要求shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址.
+##? 总是真实IP. 这个选项要求shadowrocket在TUN处理DNS请求时返回一个真实的IP地址而不是假的IP地址.
 always-real-ip = localhost
 
 
