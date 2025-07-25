@@ -66,9 +66,9 @@ DOMAIN-SUFFIX,jable.tv,香港
 DOMAIN-SUFFIX,onlyfans.com,香港
 
 ## docker
-docker.com
-docker.io
-dockerhub.com
+DOMAIN-SUFFIX,docker.com,香港
+DOMAIN-SUFFIX,docker.io,香港
+DOMAIN-SUFFIX,dockerhub.com,香港
 
 ## huggingface
 DOMAIN-SUFFIX,huggingface.co,香港
