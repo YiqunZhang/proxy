@@ -35,7 +35,7 @@ hijack-dns = 8.8.8.8:53,1.1.1.1:53
 always-real-ip = localhost
 
 
-[Proxy Group]
+[Proxy Group]  #  建议只使用 select / url-test
 第四范式 = select,policy-regex-filter=范式|4paradigm|4Paradigm|4pd
 澳洲 = url-test,policy-regex-filter=🇦🇺|澳大利亚|澳洲|AU,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 日本 = url-test,policy-regex-filter=🇯🇵|日本|JP,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
@@ -44,7 +44,7 @@ always-real-ip = localhost
 香港 = url-test,policy-regex-filter=🇭🇰|香港|hk,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 
 
-[Rule]
+[Rule]  # 建议只使用 DOMAIN-SUFFIX/ IP-CIDR
 # 第四范式
 IP-CIDR,172.24.0.0/16,第四范式,no-resolve
 IP-CIDR,172.25.0.0/16,第四范式,no-resolve
