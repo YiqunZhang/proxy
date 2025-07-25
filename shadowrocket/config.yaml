@@ -1,4 +1,9 @@
 [General]
+
+## Apple本地wifi认证检测: captive.apple.com
+## Apple本地系统服务, 有反代理检测: seed-sequoia.siri.apple.com
+## 本地回环 和 局域网设备发现: localhost,*.local
+
 # 旁路系统. 如果禁用此选项, 它可能会导致一些系统问题, 如推送通知延误
 bypass-system = true
 
@@ -40,8 +45,6 @@ tun-excluded-routes = 127.0.0.0/8,localhost,255.255.255.255/32,224.0.0.0/4,10.0.
 tun-included-routes = 
 
 
-
-
 # DNS
 ## DNS覆写. 你可以使用此选项覆盖默认的DNS服务器. iOS系统不允许你在蜂窝网络上修改DNS设置. 现在使用shadowrocket你可以很容易地做到这一点.
 dns-server = 1.2.4.8,114.114.114.114
@@ -59,10 +62,11 @@ hijack-dns = 8.8.8.8:53,1.1.1.1:53
 always-real-ip = localhost
 
 
-[Proxy Group]  
+[Proxy Group]
 # 建议只使用 select / url-test
 
-第四范式 = select,policy-regex-filter=范式|4paradigm|4Paradigm|4pd
+家 = select,policy-regex-filter=家|HOME|Home|home
+第四范式 = select,policy-regex-filter=范式|4Paradigm|4paradigm|4pd
 澳洲 = url-test,policy-regex-filter=🇦🇺|澳大利亚|澳洲|AU,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 日本 = url-test,policy-regex-filter=🇯🇵|日本|JP,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 台湾 = url-test,policy-regex-filter=🇹🇼|台湾|TW,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
@@ -70,7 +74,7 @@ always-real-ip = localhost
 香港 = url-test,policy-regex-filter=🇭🇰|香港|hk,url=http://cp.cloudflare.com/generate_204,interval=600,tolerance=30,timeout=5
 
 
-[Rule]  
+[Rule]
 # 建议只使用 DOMAIN-SUFFIX/ IP-CIDR
 
 # 第四范式
