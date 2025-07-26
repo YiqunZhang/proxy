@@ -153,6 +153,10 @@ DOMAIN-SUFFIX,npmjs.org,香港
 DOMAIN-SUFFIX,npm.im,香港
 DOMAIN-SUFFIX,npm.community,香港
 
+## gitbook
+DOMAIN-SUFFIX,gitbook.com,香港
+DOMAIN-SUFFIX,gitbook.io,香港
+
 # X
 DOMAIN-SUFFIX,x.com,香港
 
